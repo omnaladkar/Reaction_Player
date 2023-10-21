@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+  }
+  
+  $RobotoCondensed: "Roboto Condensed", sans-serif;
+  $black: #000000;
+  $white: #ffffff;
+  $blue: #0000ff;
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    
+
+}
+  
+  .buttons {
+    &--wrapper {
+      padding: 25px 0;
+    }
+    &--title {
+      color: $black;
+      font-size: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &--list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 25px 0;
+      button {
+        flex: 0 0 17.5%;
+        margin: 10px;
+      }
+    }
+  }
+  
+  .custom-btn {
+    appearance: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-height: 50px;
+    padding: 22px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.1s;
+    z-index: 1;
+    span {
+      z-index: 2;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      background: $blue;
+      z-index: -1;
+    }
+  
+    &.style-01,
+    &.style-01:focus,
+    &.style-01:active,
+    &.style-01:visited {
+      border: 4px solid $blue;
+      background-color: transparent;
+      color: $blue;
+      &:before {
+        width: 0;
+        height: 100%;
+        right: 0;
+        transition: width 0.5s ease-in-out;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        &:before {
+          width: 100%;
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+    &.style-02,
+    &.style-02:focus,
+    &.style-02:active,
+    &.style-02:visited {
+      border: 4px solid $blue;
+      background-color: transparent;
+      color: $blue;
+      &:before {
+        width: 0;
+        height: 100%;
+        right: 0;
+        transition: width 0.5s ease-in-out;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        &:before {
+          width: 100%;
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+    &.style-03,
+    &.style-03:focus,
+    &.style-03:active,
+    &.style-03:visited {
+      border: 4px solid $blue;
+      background-color: transparent;
+      color: $blue;
+      &:before {
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        transition: height 0.5s ease-in-out;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        &:before {
+          height: 100%;
+          top: 0;
+          bottom: auto;
+        }
+      }
+    }
+   
+  }
+ 
+  .header{
+      width: 100%;
+      height: 100%;
+     
+      position: relative;
+  
+  }
+  
+  
+  
+  .col {
+    width:60%;
+   
+    
+  }
+  .row{
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    
+  
+  }
+  .col-1{
+      flex-basis: 65%;
+  
+  }
+  .col-2{
+      flex-basis: 23%;
+  }
+  .host-img{
+    border-radius:2%;  /* use for circle 50% */
+    border:solid 0px #999;
+    width:480px;
+    height:360px;
+    overflow:hidden;
+    position: relative;
+    top:40px;
+    z-index:10;
+  -webkit-box-shadow: 1px 11px 20px 4px rgba(0,0,0,0.28);
+-moz-box-shadow: 1px 11px 20px 4px rgba(0,0,0,0.28);
+box-shadow: 1px 11px 20px 4px rgba(0,0,0,0.28);
+  float: left;
+  margin: 50px;
+  background-color: #009688;
+  }
+  .host-img-1{
+      width: 100%;
+    height: 137%;
+      border-radius: 15px;
+  }
+  .contarols{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .joined{
+     
+      border-radius: 15px;
+      padding: 10px;
+     
+     height: 90%;
+    width:80%;
+  
+  }
+  .joined2{
+     
+      border-radius: 15px;
+      padding: 10px;
+      
+      height: 70%;
+  
+  }
+  .joined div{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+  
+  }
+  .joined img{
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+  
+  }
+  .video-wrapper {
+    position: relative;
+  }
+  
+  .video-wrapper button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -20px; /* Adjust the negative margin to overlap the button */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .video-wrapper button img {
+    width: 20px; /* Adjust the width of the image */
+    height: 20px; /* Adjust the height of the image */
+    margin-right: 5px; /* Add space between the image and text */
+  }
+  
+  /* Styles for the "Mute" and "Unmute" text */
+  .video-wrapper button span {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }

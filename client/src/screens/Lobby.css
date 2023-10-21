@@ -1,0 +1,49 @@
+/* LobbyScreen.css */
+.lobby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f0f0; /* Background color */
+  }
+  
+  .lobby-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Title color */
+  }
+  
+  .lobby-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    color: #555; /* Label color */
+  }
+  
+  .form-input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Input border color */
+    border-radius: 5px;
+  }
+  
+  .join-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #0078d4; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .join-button:hover {
+    background: #005ea3; /* Button background color on hover */
+  }
+  
