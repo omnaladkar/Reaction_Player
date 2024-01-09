@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'No build necessary for this project'",
     "start-server": " npm install && nodemon index.js",
   "start-client": "cd ../client && npm start && npm install",
   "start": " npm run start-client && npm run start-server"
